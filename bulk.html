@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bulk, monthly and festival orders | Jain Confectionery, Pilibhit</title>
+<meta name="description" content="Monthly ration, festival gift hampers, party and function supplies, and regular supply for shops and offices in Pilibhit.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='29' fill='%23fff' stroke='%23A9853A' stroke-width='3'/><text x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%237A5C1C'>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Manrope:wght@400..800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="bulk">
+<main>
+  <div class="wrap page-head">
+    <p class="hindi" lang="hi">थोक, महीने का राशन और त्योहार के ऑर्डर</p>
+    <h1>Bulk, monthly and festival orders</h1>
+    <p>Monthly ration for the family, hampers for Diwali, supplies for a function or your office. Tell us what you need and when, and we’ll quote on WhatsApp.</p>
+  </div>
+
+  <section class="section" style="padding-top:2.5rem">
+    <div class="wrap occasion-grid" data-reveal>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="calendar"></span>
+        <div>
+          <h2>Monthly ration</h2>
+          <p>Send your monthly list once. We pack atta, dal, oil, masala, soap and everything else together and deliver on the date you choose.</p>
+          <ul><li>Packed in one go</li><li>Delivered on your date</li><li>Pay on delivery</li></ul>
+          <button class="text-link" type="button" data-pick="Monthly ration">Plan a monthly order</button>
+        </div>
+      </article>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="diya"></span>
+        <div>
+          <h2>Festival gift hampers</h2>
+          <p>Diwali, Raksha Bandhan, Holi and Eid packs with chocolates, sweets, cookies and dry fruit, packed and ready to gift.</p>
+          <ul><li>Packed to your budget</li><li>Bulk rates for offices</li></ul>
+          <button class="text-link" type="button" data-pick="Festival hampers">Ask about hampers</button>
+        </div>
+      </article>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="balloon"></span>
+        <div>
+          <h2>Parties and functions</h2>
+          <p>Cold drinks by the crate, snacks, sweets, birthday cakes and return gifts for birthdays, shaadi functions and pooja.</p>
+          <ul><li>Crate and carton rates</li><li>Delivered to the venue</li></ul>
+          <button class="text-link" type="button" data-pick="Party or function">Plan a party order</button>
+        </div>
+      </article>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="store"></span>
+        <div>
+          <h2>Shops and offices</h2>
+          <p>Tea, sugar, biscuits, water and cleaning supplies for offices, schools and clinics, delivered as often as you need.</p>
+          <ul><li>Regular supply</li><li>One bill for everything</li></ul>
+          <button class="text-link" type="button" data-pick="Shop or office supply">Set up regular supply</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap enquiry-wrap">
+      <div class="enquiry-intro" data-reveal>
+        <h2>Tell us what you need</h2>
+        <p>Fill this in and send it on WhatsApp. We’ll reply with options and the price.</p>
+        <ul class="list-ways">
+          <li><span data-icon="clock"></span><span><strong>Tell us early</strong>Large orders go smoother with notice. Cakes need 2 hours.</span></li>
+          <li><span data-icon="gift"></span><span><strong>Packed to your budget</strong>Tell us the amount per pack and how many.</span></li>
+          <li><span data-icon="scooter"></span><span><strong>Delivered where you need it</strong>Home, hall, school or office.</span></li>
+        </ul>
+      </div>
+      <form class="panel" id="enquiry" novalidate>
+        <div class="field-row">
+          <div class="field"><label for="e-name">Your name</label><input id="e-name" name="name" autocomplete="name"></div>
+          <div class="field">
+            <label for="e-type">Order type</label>
+            <select id="e-type" name="type">
+              <option>Monthly ration</option><option>Festival hampers</option><option>Party or function</option><option>Shop or office supply</option><option>Something else</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="e-date">Date needed</label><input id="e-date" name="date" type="date"></div>
+          <div class="field"><label for="e-qty">Quantity or budget</label><input id="e-qty" name="qty" placeholder="e.g. 30 hampers, ₹500 each"></div>
+        </div>
+        <div class="field"><label for="e-details">Details</label><textarea id="e-details" name="details" placeholder="Items, brands, packing, delivery address…"></textarea></div>
+        <button class="btn btn-dark btn-block" type="submit"><span data-icon="whatsapp"></span>Send enquiry on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

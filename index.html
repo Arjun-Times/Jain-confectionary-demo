@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jain Confectionery, Pilibhit | Groceries, snacks and daily needs delivered</title>
+<meta name="description" content="Pilibhit’s trusted general store since 2001. Groceries, snacks, chocolates, drinks, personal care and household essentials. Order on WhatsApp, free delivery within 1 km on orders from ₹300.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='29' fill='%23fff' stroke='%23A9853A' stroke-width='3'/><text x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' font-weight='700' fill='%237A5C1C'>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..800;1,400..800&family=Manrope:wght@400..800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="hero-status" data-status></p>
+        <p class="hindi" lang="hi">घर का हर सामान, एक ही दुकान से।</p>
+        <h1>
+          <span class="h-line"><span>Pilibhit’s trusted</span></span>
+          <span class="h-line"><span>store for <span data-years>25</span> years.</span></span>
+        </h1>
+        <p class="lede">Groceries, snacks, chocolates, drinks, personal care and household essentials. Pick what you need, send the order on WhatsApp, and we deliver in <span data-eta>30 to 40 minutes</span>.</p>
+        <form class="hero-search" action="shop.html" method="get" role="search">
+          <span data-icon="search"></span>
+          <label class="sr-only" for="hero-q">Search the store</label>
+          <input id="hero-q" name="q" type="search" placeholder="Search atta, oil, soap…" autocomplete="off">
+          <button class="btn btn-primary" type="submit">Search</button>
+        </form>
+        <div class="quick">
+          <span>Popular:</span>
+          <a href="shop.html?q=atta">Atta</a>
+          <a href="shop.html?q=oil">Oil</a>
+          <a href="shop.html?q=detergent">Detergent</a>
+          <a href="shop.html?q=shampoo">Shampoo</a>
+          <a href="shop.html?cat=sweets">Chocolates</a>
+        </div>
+        <ul class="promise">
+          <li><span data-icon="scooter"></span><span><strong>Delivered in <span data-eta>30 to 40 minutes</span></strong>Straight from our shelves</span></li>
+          <li><span data-icon="tag"></span><span><strong>Free delivery from <span data-free-min>₹300</span></strong>Within <span data-free-km>1 km</span> of the shop</span></li>
+          <li><span data-icon="cash"></span><span><strong>Pay on delivery</strong>Cash or UPI at your door</span></li>
+        </ul>
+      </div>
+      <div class="seal-stage">
+        <div class="seal" id="seal"></div>
+        <div class="float-card fc1"><span class="fc-ico" data-icon="store"></span><span><span data-status></span>Main Market, Pilibhit</span></div>
+        <div class="float-card fc2"><span class="fc-ico" data-icon="basket"></span><span><strong><span data-product-count>45</span> products online</strong>Groceries to cosmetics</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="order-again" hidden>
+    <div class="again">
+      <span class="fc-ico" data-icon="repeat"></span>
+      <div><h2>Welcome back</h2><p id="again-text"></p></div>
+      <button class="btn btn-dark" id="again-btn" type="button">Order the same again</button>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:clamp(2.5rem,5vw,4rem)">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div><h2>Shop by shelf</h2><p>Everything a household needs, from the kitchen to the bathroom.</p></div>
+        <a class="text-link" href="shop.html">See all products</a>
+      </div>
+      <div class="cat-grid" id="home-cats" data-reveal></div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div><h2>Everyday essentials</h2><p>The things Pilibhit adds to the cart first.</p></div>
+        <a class="text-link" href="shop.html">Shop everything</a>
+      </div>
+      <div class="p-row" id="home-best" data-reveal></div>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap list-wrap">
+      <div class="list-copy" data-reveal>
+        <h2>Have a long list? Send it as it is.</h2>
+        <p>No need to search item by item. Write your monthly ration or today’s needs the way you always do, and we’ll pack it and send the total on WhatsApp.</p>
+        <ul class="list-ways">
+          <li><span data-icon="list"></span><span><strong>Type your list here</strong>Brand names, sizes, anything. We read it like a parchi.</span></li>
+          <li><span data-icon="camera"></span><span><strong>Or send a photo of it</strong><a class="text-link" data-wa="Hi! I'm sending a photo of my shopping list." href="#" target="_blank" rel="noopener">Open WhatsApp</a> and attach the picture.</span></li>
+          <li><span data-icon="check"></span><span><strong>We confirm before packing</strong>Price, substitutes and delivery time, all on WhatsApp.</span></li>
+        </ul>
+      </div>
+      <form class="parchi" id="list-form" data-reveal>
+        <div>
+          <div class="parchi-head"><span>Shopping list</span><span lang="hi">सामान की पर्ची</span></div>
+          <label class="sr-only" for="list">Your shopping list</label>
+          <textarea id="list" name="list" placeholder="5 kg atta&#10;1 L sarson tel&#10;2 detergent powder 1 kg&#10;1 shampoo&#10;Bread and milk"></textarea>
+          <button class="btn btn-dark btn-block" type="submit"><span data-icon="whatsapp"></span>Send list on WhatsApp</button>
+          <p class="fine">Opens WhatsApp with your list filled in. Tap send there.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap heritage" data-reveal>
+      <div class="heritage-num"><span data-years data-count>25</span><small>years in Pilibhit</small></div>
+      <div>
+        <blockquote><p>The neighbourhood store Pilibhit has trusted since <span data-since>2001</span>.</p></blockquote>
+        <p class="muted">Kitchen staples, snacks, sweets, personal care and cleaning supplies under one roof, at prices never above MRP. The website simply brings the same shelves to your phone.</p>
+        <div class="facts">
+          <div><strong data-product-count data-count>45</strong><span>products online</span></div>
+          <div><strong data-shelf-count data-count>8</strong><span>shelves</span></div>
+          <div><strong><span data-free-min>₹300</span></strong><span>free delivery from</span></div>
+        </div>
+        <a class="text-link" href="visit.html">Visit the shop</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head" data-reveal><div><h2>Ordering takes a minute</h2><p>No app to download and no account to make.</p></div></div>
+      <ol class="steps" data-reveal>
+        <li><h3>Fill your cart or write a list</h3><p>Tap Add on what you need, or send your whole list in one go. Your cart stays saved on your phone.</p></li>
+        <li><h3>Send it on WhatsApp</h3><p>Add your address and a delivery time. The full order reaches our WhatsApp, ready to pack.</p></li>
+        <li><h3>We bring it over</h3><p>We confirm on WhatsApp and deliver in about <span data-eta>30 to 40 minutes</span>. Pay by cash or UPI.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap" data-reveal>
+      <div class="delivery-band">
+        <span class="band-ico" data-icon="scooter"></span>
+        <div>
+          <h2>Free home delivery near the shop</h2>
+          <p>Orders from <span data-free-min>₹300</span> within <span data-free-km>1 km</span> are delivered free. Farther away? Send the order anyway and we’ll tell you the charge before we leave.</p>
+        </div>
+        <a class="btn btn-primary" href="shop.html">Start your order</a>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
