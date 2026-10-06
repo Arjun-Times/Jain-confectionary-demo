@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cakes, hampers & party orders | Jain Confectionery, Pilibhit</title>
+<meta name="description" content="Birthday cakes, festival hampers, return gifts and bulk orders for weddings and functions in Pilibhit.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='29' fill='%23fff' stroke='%23B08D3E' stroke-width='3'/><text x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='34' fill='%238A6A25'>J</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Instrument+Sans:wght@400..700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="celebrations">
+<main>
+  <div class="wrap page-head">
+    <p class="hindi" lang="hi">हर ख़ुशी में थोड़ा मीठा।</p>
+    <h1>Cakes, hampers and party orders</h1>
+    <p>Birthdays, festivals, shaadi functions and school events. Tell us what you need and when, and we’ll have it ready.</p>
+  </div>
+
+  <section class="section" style="padding-top:2.5rem">
+    <div class="wrap occasion-grid" data-reveal>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="cake"></span>
+        <div>
+          <h2>Birthday cakes</h2>
+          <p>Chocolate truffle, black forest, pineapple and more, with your name or message written on top.</p>
+          <ul><li>Half kg to 2 kg</li><li>Eggless on request</li><li>Order 2 hours ahead</li></ul>
+        </div>
+      </article>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="diya"></span>
+        <div>
+          <h2>Festival gift hampers</h2>
+          <p>Diwali, Raksha Bandhan, Holi and Eid packs with chocolates, cookies and dry fruit, packed and ready to gift.</p>
+          <ul><li>Packed to your budget</li><li>Bulk rates for offices</li></ul>
+        </div>
+      </article>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="balloon"></span>
+        <div>
+          <h2>Children’s parties</h2>
+          <p>Return-gift packs, toffee jars, cupcakes and cold drinks for the whole party in one order.</p>
+          <ul><li>Sets of 10, 25 or 50</li><li>Delivered to the venue</li></ul>
+        </div>
+      </article>
+      <article class="occasion">
+        <span class="cat-ico" data-icon="rings"></span>
+        <div>
+          <h2>Weddings and functions</h2>
+          <p>Cold drinks, snacks and sweets in bulk for shaadi functions, pooja, and school or office events.</p>
+          <ul><li>Crate and carton rates</li><li>Advance booking</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap enquiry-wrap">
+      <div class="enquiry-intro" data-reveal>
+        <h2>Plan your order</h2>
+        <p>Fill this in and send it on WhatsApp. We’ll reply with options and the price.</p>
+        <ul class="note-list">
+          <li><span data-icon="clock"></span><span><strong>Cakes need 2 hours</strong>Order earlier for a specific time or a large cake.</span></li>
+          <li><span data-icon="gift"></span><span><strong>Hampers to your budget</strong>Tell us the amount per pack and the count.</span></li>
+          <li><span data-icon="scooter"></span><span><strong>Delivered to the venue</strong>Home, hall, school or office.</span></li>
+        </ul>
+      </div>
+      <form class="panel" id="enquiry" novalidate>
+        <div class="field-row">
+          <div class="field"><label for="e-name">Your name</label><input id="e-name" name="name" autocomplete="name"></div>
+          <div class="field">
+            <label for="e-occ">Occasion</label>
+            <select id="e-occ" name="occasion">
+              <option>Birthday cake</option><option>Festival hamper</option><option>Children’s party</option><option>Wedding or function</option><option>Something else</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="e-date">Date needed</label><input id="e-date" name="date" type="date"></div>
+          <div class="field"><label for="e-qty">Quantity or size</label><input id="e-qty" name="qty" placeholder="e.g. 1 kg cake, 30 packs"></div>
+        </div>
+        <div class="field"><label for="e-details">Details</label><textarea id="e-details" name="details" placeholder="Flavour, message on the cake, budget…"></textarea></div>
+        <button class="btn btn-dark btn-block" type="submit"><span data-icon="whatsapp"></span>Send enquiry on WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
